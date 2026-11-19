@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flexbox 2 - Gambar 8(b)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        body {
+            background-color: #f8b4bc;
+            padding: 15px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        header, footer {
+            background-color: #98d4d4;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .middle-section {
+            flex: 1;
+            display: flex;
+            gap: 15px;
+        }
+
+        aside {
+            width: 30%;
+            background-color: #5eb2b2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        article {
+            width: 70%;
+            background-color: #f47474;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Mendorong konten ke bawah */
+        }
+
+        .article-title {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .image-group {
+            display: flex;
+            gap: 15px;
+            height: 45%;
+        }
+
+        .image-box {
+            flex: 1;
+            background-color: #d4d4d4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+
+    <div class="middle-section">
+        <aside>Aside</aside>
+        <article>
+            <div class="article-title">Article</div>
+            <div class="image-group">
+                <div class="image-box">Image</div>
+                <div class="image-box">Image</div>
+                <div class="image-box">Image</div>
+            </div>
+        </article>
+    </div>
+
+    <footer>Footer</footer>
+</body>
+</html>
